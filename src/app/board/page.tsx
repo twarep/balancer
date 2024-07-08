@@ -6,7 +6,7 @@ export default function Page() {
       </div>
       <h1 className="font-bold text-4xl mb-4">Board</h1>
       <div className="grid grid-cols-3 w-full justify-center">
-        <div className="text-3xl font-semibold text-center px-6">To Plan
+        <div className="text-2xl font-semibold text-center px-6">To Plan
           <div className="my-6 flex-col border-2 border-black rounded-md">
             <p className="text-2xl p-4">Task #4</p>
           </div>

@@ -17,16 +17,19 @@ export default function Page() {
           </div>
         </div>
         <div className="text-2xl font-semibold text-center px-6">This Week
-          <div className="my-6 flex-col border-2 border-black rounded-md">
+          <div className="my-6 flex flex-row items-center justify-between border-2 border-black rounded-md">
             <p className="text-2xl p-4">Task #2</p>
+            <p className="text-xl mx-4 px-4 py-2">in 2 days</p>
           </div>
-          <div className="my-6 flex-col border-2 border-black rounded-md">
+          <div className="my-6 flex flex-row items-center justify-between border-2 border-black rounded-md">
             <p className="text-2xl p-4">Task #3</p>
+            <p className="text-xl mx-4 px-4 py-2">in 3 days</p>          
           </div>
         </div>
         <div className="text-2xl font-semibold text-center px-6">This Month
-          <div className="my-6 flex-col border-2 border-black rounded-md">
+          <div className="my-6 flex flex-row items-center justify-between border-2 border-black rounded-md">
             <p className="text-2xl p-4">Task #1</p>
+            <p className="text-xl mx-4 px-4 py-2">in 11 days</p>          
           </div>
         </div>
       </div>

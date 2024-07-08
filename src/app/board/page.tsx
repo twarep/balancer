@@ -1,6 +1,9 @@
 export default function Page() {
   return (
     <main className="flex my-2 flex-col items-center justify-between py-6 px-6">
+      <div className="grid justify-items-start w-full px-6">
+        <a href="/"><h1 className="text-left text-2xl">Balancer</h1></a>
+      </div>
       <h1 className="font-bold text-4xl mb-4">Board</h1>
       <div className="grid grid-cols-3 w-full justify-center">
         <div className="text-3xl font-semibold text-center px-6">To Plan

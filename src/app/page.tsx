@@ -16,16 +16,6 @@ export default function Home() {
         </a>
 
         <a
-          href="/board"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">Board{" "}</h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Check your current board for tasks.
-          </p>
-        </a>
-
-        <a
           href="/recurring"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
         >
@@ -45,15 +35,6 @@ export default function Home() {
           </p>
         </a>
 
-        <a
-          href="/sprints"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">Sprints{" "}</h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Review your current and past sprints.
-          </p>
-        </a>
       </div>
     </main>
   );

@@ -15,9 +15,12 @@ export default function Page() {
           </p>
         </a>
       </div>
-      <div className="mt-10 text-center">
-          <button type="submit" className="rounded-lg border border-black px-4 py-2 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">New Project</button>
-      </div>
+      <a
+          href="/new-project"
+          className="group rounded-lg border border-black px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+        >
+          <h2 className="text-xl font-semibold">New Project{" "}</h2>
+      </a>
     </main>
   );
 }

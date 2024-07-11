@@ -33,7 +33,7 @@ export default function Page() {
           className="group rounded-lg border border-black px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
         >
           <h2 className="text-xl font-semibold">Complete Sprint{" "}</h2>
-        </a>
+      </a>
     </main>
 
   );

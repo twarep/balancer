@@ -5,8 +5,8 @@ export default function Page() {
         <a href="/"><h1 className="text-left text-2xl">Balancer</h1></a>
       </div>
       <div className="max-w-2xl text-center">
-          <h2 className="text-3xl font-bold text-gray-900">Create New Project</h2>
-        </div>
+        <h2 className="text-3xl font-bold text-gray-900">Create New Project</h2>
+      </div>
         <form action="#" method="POST" className="mx-4 w-1/2">
           <div className="grid grid-cols-1 gap-x-4 gap-y-6 sm:grid-cols-2">
             <div className="sm:col-span-2">

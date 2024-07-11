@@ -27,19 +27,6 @@ export default function Page() {
             </div>
             <div className="flex gap-x-4">
               <label className="text-sm leading-6 text-gray-600" id="switch-1-label">
-                Category
-              </label>
-              <div className="flex h-6 items-center">
-                <select name="cat">
-                  <option value="" disabled>Select a Category</option>
-                  <option value="programming">Programming</option>
-                  <option value="workout">Workout</option>
-                  <option value="cooking">Cooking</option>
-                </select>
-              </div>
-            </div>
-            <div className="flex gap-x-4">
-              <label className="text-sm leading-6 text-gray-600" id="switch-1-label">
                 Project:
               </label>
               <div className="flex h-6 items-center">
@@ -48,19 +35,6 @@ export default function Page() {
                   <option value="sprint1">Balancer</option>
                   <option value="sprint2">Fitness</option>
                   <option value="sprint3">Chef</option>
-                </select>
-              </div>
-            </div>
-            <div className="flex gap-x-4">
-              <label className="text-sm leading-6 text-gray-600" id="switch-1-label">
-                Will be added to:
-              </label>
-              <div className="flex h-6 items-center">
-                <select name="sprint">
-                  <option value="" disabled>Select a Category</option>
-                  <option value="sprint1">Sprint 1</option>
-                  <option value="sprint2">Sprint 2</option>
-                  <option value="sprint3">Sprint 3</option>
                 </select>
               </div>
             </div>

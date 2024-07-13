@@ -8,5 +8,3 @@ export default function RecurringCheckbox() {
     <input name="recurring" type="checkbox" checked={recurring} onChange={e => setRecurring(!recurring)}></input> 
   )
 };
-
-

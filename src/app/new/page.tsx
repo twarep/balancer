@@ -1,6 +1,8 @@
-import RecurringCheckbox from "./recurringCheckbox";
+'use client';
+import { useState } from "react";
 
 export default function Page() {
+  const [recurring, setRecurring] = useState(false)
 
   return (
     <main className="flex my-2 flex-col items-center justify-between py-6 px-6">
@@ -18,34 +20,57 @@ export default function Page() {
               </div>
             </div>
             <div className="flex gap-x-4">
-              <label className="text-sm leading-6 text-gray-600" id="switch-1-label">
+              <label className="text-sm leading-6 text-gray-600" id="recurring-label">
                 Recurring Task?
               </label>
               <div className="flex h-6 items-center">
-                <RecurringCheckbox />
+                <input name="recurring" type="checkbox" checked={recurring} onChange={e => setRecurring(!recurring)}></input> 
               </div>
             </div>
-            <div className="flex gap-x-4">
-              <label className="text-sm leading-6 text-gray-600" id="switch-1-label">
-                Project:
-              </label>
-              <div className="flex h-6 items-center">
-                <select name="sprint">
-                  <option value="" disabled>Select a Project</option>
-                  <option value="sprint1">Balancer</option>
-                  <option value="sprint2">Fitness</option>
-                  <option value="sprint3">Chef</option>
-                </select>
+            {!recurring ?
+            <>
+              <div className="flex gap-x-4">
+                <label className="text-sm leading-6 text-gray-600" id="project-label">
+                  Project:
+                </label>
+                <div className="flex h-6 items-center">
+                  <select name="sprint">
+                    <option value="" disabled>Select a Project</option>
+                    <option value="project1">Balancer</option>
+                    <option value="project2">Fitness</option>
+                    <option value="project3">Chef</option>
+                  </select>
+                </div>
               </div>
-            </div>
-            <div className="flex gap-x-4">
-              <label className="text-sm leading-6 text-gray-600" id="switch-1-label">
-                Due date:
-              </label>
-              <div className="flex h-6 items-center">
-                <input name="due" type="date"></input>
+              <div className="flex gap-x-4">
+                <label className="text-sm leading-6 text-gray-600" id="due-label">
+                  Due date:
+                </label>
+                <div className="flex h-6 items-center">
+                  <input name="due" type="date"></input>
+                </div>
               </div>
-            </div>
+            </>
+          : 
+            <>
+              <div className="flex gap-x-4">
+                <label className="text-sm leading-6 text-gray-600" id="due-label">
+                  Frequency:
+                </label>
+                <div className="flex flex-row h-6 items-center justify-between">
+                  <p className="px-2">Every{" "}</p>
+                  <input className="text-center px-2 w-12" name="due" placeholder="0" type="number"></input>
+                  <select className="px-2 w-36" name="frequency">
+                    <option value="" disabled>Select a Frequency</option>
+                    <option value="days">Days</option>
+                    <option value="weeks">Weeks</option>
+                    <option value="months">Months</option>
+                    <option value="years">Years</option>
+                  </select>
+                </div>
+              </div>
+            </>
+          }
           </div>
           <div className="mt-10 text-center">
             <button type="submit" className="rounded-lg border border-black px-4 py-2 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">Create</button>

@@ -36,7 +36,7 @@ export default function Page({ params }: { params: { slug: string } }) {
       <div className="border border-black my-6 w-full opacity-50"></div>
       <div className="mt-4 grid grid-cols-3 w-full justify-center">
         <a
-          href="/sprintdone"
+          href={'/projects/' + params.slug + '/complete'}
           className="group rounded-lg border border-transparent mx-6 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
         >
           <h2 className="text-center text-2xl px-6 font-semibold">Complete Sprint{" "}</h2>
